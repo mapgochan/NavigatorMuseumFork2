@@ -47,6 +47,36 @@
           "modified": "2026-06-10 10:00",
           "isEmpty": true,
           "permanent": true
+        },
+        {
+          "name": "СТИХИ ВЕТЕРАНАМ ВОВ. АПОЛЬКОВ АЛЕКСАНДР ГР. ПО-11",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/ppp.png",
+          "children": [],
+          "url": "https://vm-fb.anosov.ru/api/public/dl/K0E-SrSd?inline=true"
+        },
+        {
+          "name": "СТИХИ ВЕТЕРАНАМ ВОВ. АНФЕРОВ ДМИТРИЙ ГР. ПО-11",
+          "icon": "folder.png",
+          "children": [],
+          "url": "https://vm-fb.anosov.ru/api/public/dl/exETGtVR?inline=true"
+        },
+        {
+          "name": "ПОБЕДА СТАЛИНГРАДСКОЙ БИТВЫ",
+          "icon": "folder.png",
+          "children": [],
+          "url": "https://vm-fb.anosov.ru/api/public/dl/MfODYb0l?inline=true"
+        },
+        {
+          "name": "ТОРЖЕСТВЕННОЕ ОТКРЫТИЕ КНИГИ ПАМЯТИ",
+          "icon": "folder.png",
+          "children": [],
+          "url": "https://vm-fb.anosov.ru/api/public/dl/itPRbauv?inline=true"
+        },
+        {
+          "name": "БЕССМЕРТНЫЙ ПОЛК",
+          "icon": "folder.png",
+          "children": [],
+          "url": "https://vm-fb.anosov.ru/api/public/dl/CHhfsPLD?inline=true"
         }
       ],
       "url": null,
@@ -124,6 +154,42 @@
           "url": "https://s.anosov.ru/overcomeStud",
           "modified": "2026-06-10 10:00",
           "isEmpty": true
+        },
+        {
+          "name": "АБИЛИМПИКС",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/ppp.png",
+          "children": [],
+          "url": "https://vm-fb.anosov.ru/api/public/dl/dwrwXuix?inline=true"
+        },
+        {
+          "name": "О ГРУППЕ ГХ-81",
+          "icon": "folder.png",
+          "children": [],
+          "url": "https://vm-fb.anosov.ru/api/public/dl/Rx2Cn6jv?inline=true"
+        },
+        {
+          "name": "ОБУЧЕНИЕ СТУДЕНТОВ ОВЗ",
+          "icon": "folder.png",
+          "children": [],
+          "url": "https://vm-fb.anosov.ru/api/public/dl/q4es7rlw?inline=true"
+        },
+        {
+          "name": "БЕЗБАРЬЕРНАЯ СРЕДА",
+          "icon": "folder.png",
+          "children": [],
+          "url": "https://vm-fb.anosov.ru/api/public/dl/MPUCs-68?inline=true"
+        },
+        {
+          "name": "УПРАВЛЕНИЕ ПРОФЕССИОНАЛЬНЫМ РАЗВИТИЕМ СТУДЕНТОВ С ОВЗ",
+          "icon": "folder.png",
+          "children": [],
+          "url": "https://vm-fb.anosov.ru/api/public/dl/jFC8zuae?inline=true"
+        },
+        {
+          "name": "ОРГАНИЗАЦИЯ ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ ЛИЦ С ОВЗ",
+          "icon": "folder.png",
+          "children": [],
+          "url": "https://vm-fb.anosov.ru/api/public/dl/lacYcpjZ?inline=true"
         }
       ],
       "url": null,
@@ -193,6 +259,18 @@
           "url": "https://vm.anosov.ru/navigate_old/knigechka/index.html",
           "modified": "2026-06-10 10:00",
           "isEmpty": true
+        },
+        {
+          "name": "ВСЕРОССИЙСКИЙ КОНКУРС \"СТУДЕНТ - 2025\"",
+          "icon": "folder.png",
+          "children": [],
+          "url": "https://vm-fb.anosov.ru/api/public/dl/CSCzsPDx?inline=true"
+        },
+        {
+          "name": "КИБЕРБЕЗОПАСНОСТЬ",
+          "icon": "folder.png",
+          "children": [],
+          "url": "https://vm-fb.anosov.ru/api/public/dl/kAIEDKM6?inline=true"
         }
       ],
       "url": null,
@@ -306,6 +384,37 @@
           "icon": "https://vm-ftp.anosov.ru/vm/Экспонаты/mashinka.jpg",
           "children": [],
           "url": "https://vm.anosov.ru/exponates/"
+        },
+        {
+          "name": "ВИРТУАЛЬНЫЙ МУЗЕЙ",
+          "icon": "folder.png",
+          "children": [],
+          "url": "https://vm-fb.anosov.ru/api/public/dl/YzClb93t?inline=true"
+        },
+        {
+          "name": "ИСТОРИЯ КОЛЛЕДЖА",
+          "icon": "folder.png",
+          "children": [],
+          "url": "https://vm-fb.anosov.ru/api/public/dl/5wMDdtJy?inline=true"
+        },
+        {
+          "name": "30 ЛЕТ - ДИРЕКТОР ЗЛАТИК - СИДОРОВ В.В.",
+          "icon": "folder.png",
+          "children": [],
+          "url": "https://vm-fb.anosov.ru/api/public/dl/-zbeij-S?inline=true"
+        },
+        {
+          "name": "ЛИЦА ЗЛАТОУСТА (СИДОРОВ В.В.)",
+          "icon": "folder.png",
+          "children": [],
+          "url": "https://vm-fb.anosov.ru/api/public/dl/K1P62lxR?inline=true",
+          "permanent": true
+        },
+        {
+          "name": "30 ЛЕТ - ДИРЕКТОР ЗЛАТИК - СИДОРОВ В.В.",
+          "icon": "folder.png",
+          "children": [],
+          "url": "https://vm-fb.anosov.ru/api/public/dl/-zbeij-S?inline=true"
         }
       ],
       "url": null,
@@ -389,6 +498,30 @@
               "url": "https://vm.anosov.ru/reversiv",
               "modified": "2026-06-10 10:00",
               "isEmpty": true
+            },
+            {
+              "name": "РАЗРАБОТКА МИНИ-ПРАКТИК",
+              "icon": "folder.png",
+              "children": [],
+              "url": "https://vm-fb.anosov.ru/api/public/dl/Kqf_omYr?inline=true"
+            },
+            {
+              "name": "АНОСОВСКИЕ ЧТЕНИЯ (К 100 ЛЕТИЮ КОЛЛЕДЖА)",
+              "icon": "folder.png",
+              "children": [],
+              "url": "https://vm-fb.anosov.ru/api/public/dl/XGzxJCFc?inline=true"
+            },
+            {
+              "name": "ДЕКАДА ИТ (2015Г.)",
+              "icon": "folder.png",
+              "children": [],
+              "url": "https://vm-fb.anosov.ru/api/public/dl/8yRa4e7f?inline=true"
+            },
+            {
+              "name": "ОТКРЫТИЕ ДЕКАДЫ ИТ (2015Г.)",
+              "icon": "folder.png",
+              "children": [],
+              "url": "https://vm-fb.anosov.ru/api/public/dl/owGjEkfD?inline=true"
             }
           ],
           "url": null,
@@ -496,6 +629,12 @@
               "modified": "2026-06-10 10:00",
               "isEmpty": true,
               "permanent": true
+            },
+            {
+              "name": "ИНТЕРВЬЮ С Л.М. НИЗАМУТДИНОВЫМ",
+              "icon": "folder.png",
+              "children": [],
+              "url": "https://vm-fb.anosov.ru/api/public/dl/AL9DWyTI?inline=true"
             }
           ],
           "url": null,
