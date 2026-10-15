@@ -94,8 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function getIconPath(iconName) {
         
         const placeholders = [
-            'https://vm-ftp.anosov.ru/icons/folder.gif ',
-            'http://vm-ftp.anosov.ru/icons/folder.gif',
+            'https://vm-fb.anosov.ru/share/--KIpVUO ',
+            'https://vm-fb.anosov.ru/files/Иконки fb/',
             'vm-ftp.anosov.ru/icons/folder.gif'
         ];
 
