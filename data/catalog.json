@@ -236,15 +236,16 @@
           "permanent": true
         },
         {
-          "name": "ЭЛЕКТРОННАЯ КНИГА \"АНОСОВЕЦ ОПЕРЕЖАЮЩИЙ ВРЕМЯ\"",
+          "name": "ЭЛЕКТРОННАЯ КНИГА \"АНОСОВЕЦ ОПЕРЕДИВШИЙ ВРЕМЯ\"",
           "icon": "https://vm-fb.anosov.ru/api/public/dl/ickrBaPf?inline=true",
           "children": [],
           "url": "https://vm.anosov.ru/book/000000001",
           "modified": "2026-06-10 10:00",
-          "isEmpty": true
+          "isEmpty": true,
+          "permanent": true
         },
         {
-          "name": "КНИГА \"АНОСОВЕЦ ОПЕРЕЖАЮЩИЙ ВРЕМЯ\" ТЕКСТОВЫЙ ФОРМАТ",
+          "name": "КНИГА \"АНОСОВЕЦ ОПЕРЕДИВШИЙ ВРЕМЯ\" ТЕКСТОВЫЙ ФОРМАТ",
           "icon": "https://vm-fb.anosov.ru/api/public/dl/ickrBaPf?inline=true",
           "children": [],
           "url": "https://vm-fb.anosov.ru/api/public/dl/Zjj8ujKr?inline=true",
@@ -366,7 +367,7 @@
         },
         {
           "name": "ВИРТУАЛЬНЫЙ МУЗЕЙ (1907-2019гг.)",
-          "icon": "https://vm-fb.anosov.ru/api/public/dl/h1NtZrSc?inline=true",
+          "icon": "https://vm-fb.anosov.ru/api/public/dl/_LIPldJu?inline=true",
           "children": [],
           "url": "https://museum.anosov.ru/",
           "modified": "2026-06-10 10:00",
@@ -388,7 +389,7 @@
         },
         {
           "name": "ВИРТУАЛЬНЫЙ МУЗЕЙ",
-          "icon": "https://vm-fb.anosov.ru/api/public/dl/_LIPldJu?inline=true",
+          "icon": "https://vm-fb.anosov.ru/api/public/dl/h1NtZrSc?inline=true",
           "children": [],
           "url": "https://vm-fb.anosov.ru/api/public/dl/YzClb93t?inline=true"
         },
