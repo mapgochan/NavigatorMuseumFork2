@@ -6,8 +6,7 @@
     <title>Златоустовский индустриальный колледж</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="/navigator/">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="icon" href="data:,"> 
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
@@ -16,14 +15,20 @@
 
     <img src="page/muze.png" alt="Надпись" class="center-img">
 
-    <!-- Кнопка 1: Открывает интерактивный сайдбар -->
+    <!-- Кнопка для открытия каталога -->
     <button class="button-catalog" id="openCatalog" aria-expanded="false">Открыть каталог</button>
     
-    <!-- Кнопка 2: Ведет на отдельную страницу с содержанием -->
-    <a href="/navigator/content" class="button-catalog_2" style="text-decoration: none; display: flex;">Открыть содержание</a>
+    <!-- Элементы главной страницы для аудита -->
+    <div class="main-page-elements" style="display:none;">
+        <span data-element="logo" data-action="view">Логотип</span>
+        <span data-element="title" data-action="view">Заголовок</span>
+        <span data-element="center_image" data-action="view">Центральное изображение</span>
+        <span data-element="catalog_button" data-action="click">Кнопка каталога</span>
+    </div>
 
-    <!-- Левое полноэкранное окошко (Сайдбар) -->
+    <!-- Левое полноэкранное окошко -->
     <div class="sidebar-left" id="sidebarLeft" hidden>
+        <!-- Шапка с навигацией -->
         <div class="catalog-header">
             <button class="back-btn" id="backBtn" hidden>
                 <span class="back-arrow">←</span>
@@ -32,18 +37,19 @@
             <h2 class="catalog-title" id="catalogTitle">Каталог специальностей</h2>
             <button class="close-btn" id="closeSidebar" aria-label="Закрыть каталог">×</button>
         </div>
+        <!-- Поиск -->
         <div class="search-container">
             <input type="text" class="search-input" id="searchInput" placeholder="Поиск...">
             <button class="search-clear-btn" id="searchClearBtn" hidden>×</button>
         </div>
+        <!-- Сетка элементов текущего уровня -->
         <div class="items-grid-full" id="catalogGrid"></div>
     </div>
 
     <!-- Оверлей для затемнения фона -->
     <div class="overlay" hidden></div>
 
-    <!-- Подключаем скрипт для сайдбара -->
-    <script src="/js/script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>

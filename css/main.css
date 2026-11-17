@@ -103,54 +103,6 @@ body {
     }
 }
 
-.button-catalog_2 {
-    background-color: red;
-    height: 70px; 
-    width: auto; /* Ширина подстраивается под текст */
-    min-width: 280px; /* Но не меньше 280px */
-    padding: 0 30px; /* Отступы по бокам, чтобы текст не прилипал к краям */
-    color: white;
-    font: bold 24px/1.2 Arial, sans-serif;
-    position: absolute;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    z-index: 20;
-    top: 68%;
-    
-    display: inline-flex; /* Используем flex для идеального центрирования */
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    
-    white-space: nowrap; /* СТРОГО запрещает перенос текста */
-    text-decoration: none; /* Убирает подчеркивание у ссылки */
-}
-
-/* Не забываем про мобильные устройства и альбомную ориентацию */
-@media (orientation: landscape) {
-    .button-catalog_2 {
-        left: 20%; 
-        transform: translateX(-50%); 
-        top: 65%; 
-    }
-}
-
-@media (orientation: portrait) {
-    .button-catalog_2 {
-        left: 50%; 
-        transform: translateX(-50%);
-        top: 65%; 
-    }
-}
-
-@media (max-width: 480px) {
-    .button-catalog_2 {
-        font-size: 20px; /* На телефонах шрифт чуть меньше */
-        padding: 0 15px;
-    }
-}
-
 /* Сайдбар — плавное появление */
 .sidebar-left {
     position: fixed;
