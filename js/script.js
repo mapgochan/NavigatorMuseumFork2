@@ -473,6 +473,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // ===== ОБРАБОТЧИКИ СОБЫТИЙ =====
 
     
+    const contentBtn = document.getElementById('openContent');
+    if (contentBtn) {
+        contentBtn.addEventListener('click', () => {
+            window.location.href = '/navigator/content.html';
+        });
+    }
+
     el.openBtn.addEventListener('click', () => {
         logEvent('web_resource_view', 'main_page_catalog', 'ui_element', 'Открытие каталога');
         showSidebar();

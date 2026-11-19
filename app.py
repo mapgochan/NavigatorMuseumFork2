@@ -563,6 +563,9 @@ def index():
     response.headers['Expires'] = '0'
     return response
 
+@app.route('/content.html')
+def content():
+    return render_template('content.html')
 
 @app.route('/admin')
 @login_required

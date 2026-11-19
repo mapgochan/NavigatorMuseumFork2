@@ -148,14 +148,6 @@
           "permanent": true
         },
         {
-          "name": "САЙТ \"ПРЕОДОЛЕНИЯ\"",
-          "icon": "https://vm-ftp.anosov.ru/vm/фото/preodolenie.jpg",
-          "children": [],
-          "url": "https://s.anosov.ru/overcomeStud",
-          "modified": "2026-06-10 10:00",
-          "isEmpty": true
-        },
-        {
           "name": "АБИЛИМПИКС",
           "icon": "https://vm-ftp.anosov.ru/vm/фото/ppp.png",
           "children": [],
@@ -494,12 +486,6 @@
               "url": "https://vm.anosov.ru/reversiv",
               "modified": "2026-06-10 10:00",
               "isEmpty": true
-            },
-            {
-              "name": "РАЗРАБОТКА МИНИ-ПРАКТИК",
-              "icon": "https://vm-fb.anosov.ru/api/public/dl/vvbfBnHG?inline=true",
-              "children": [],
-              "url": "https://vm-fb.anosov.ru/api/public/dl/Kqf_omYr?inline=true"
             },
             {
               "name": "АНОСОВСКИЕ ЧТЕНИЯ (К 100 ЛЕТИЮ КОЛЛЕДЖА)",
