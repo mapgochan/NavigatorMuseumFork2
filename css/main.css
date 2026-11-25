@@ -1,6 +1,9 @@
-/* Общие сбросы */
 * {
     box-sizing: border-box;
+}
+
+:root {
+    --u: min(0.926vh, 0.9vw, 10px);
 }
 
 body, html {
@@ -17,9 +20,9 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-color: #14161c;
 }
 
-/* Логотип */
 .logo {
     position: absolute;
     top: 20px;
@@ -30,20 +33,22 @@ body {
     z-index: 10;
 }
 
-/* Заголовок сверху */
 .nad3 {
     position: absolute;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    font: bold 30px Arial, sans-serif;
+    font: bold clamp(18px, 1.6vw + 1vh, 30px) Arial, sans-serif;
     color: white;
     text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.5);
-    white-space: nowrap;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.3;
+    max-width: calc(100vw - 400px);
+    margin: 0;
     z-index: 10;
 }
 
-/* Базовый класс для всех центральных изображений */
 .center-img {
     position: absolute;
     top: 50%;
@@ -53,24 +58,25 @@ body {
     z-index: 5;
 }
 
-/* Конкретные размеры и коррекция позиции */
 .rama {
-    height: 750px;
+    height: calc(var(--u) * 75);
     width: auto;
 }
 
 .anosov {
-    height: 600px;
+    height: calc(var(--u) * 60);
     width: auto;
-    top: 45.6%;
-    left: 49%;
+    top: calc(50% - var(--u) * 4.4);
+    left: calc(50% - var(--u) * 1);
+    z-index: 6;
 }
 
 .nad {
-    height: 250px;
+    height: calc(var(--u) * 25);
     width: auto;
-    top: 46%;
-    left: 51%;
+    top: calc(50% - var(--u) * 4);
+    left: calc(50% + var(--u) * 1);
+    z-index: 4;
 }
 
 .button-catalog {
@@ -96,14 +102,13 @@ body {
 
 @media (orientation: landscape) {
     .button-catalog {
-        left: 70%;
+        left: 74%;
         transform: none;
         top: 65%;
         bottom: auto;
     }
 }
 
-/* Сайдбар — плавное появление */
 .sidebar-left {
     position: fixed;
     top: 0;
@@ -124,7 +129,6 @@ body {
     transform: translateX(0);
 }
 
-/* Шапка каталога */
 .catalog-header {
     display: flex;
     align-items: center;
@@ -132,7 +136,6 @@ body {
     flex-shrink: 0;
 }
 
-/* Контейнер поиска */
 .search-container {
     position: relative;
     margin: 10px 20px;
@@ -190,7 +193,6 @@ body {
     display: none;
 }
 
-/* Кнопка "Назад" - стилизованная кнопка */
 .back-btn {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border: none;
@@ -266,7 +268,6 @@ body {
     outline: none;
 }
 
-/* Сетка элементов каталога */
 .items-grid-full {
     display: flex;
     flex-wrap: wrap;
@@ -277,9 +278,9 @@ body {
     overflow-y: auto;
     flex-grow: 1;
     align-content: flex-start;
+    min-height: 0;
 }
 
-/* Карточка элемента — обновлённая версия */
 .item {
     flex: 0 0 calc(48% - 20px);
     min-width: 200px;
@@ -310,15 +311,14 @@ body {
     transform: scale(0.98);
 }
 
-/* Иконка на всю ширину */
 .item-icon {
-  width: 100%;
-  height: 180px;        /* фиксированная высота области изображения */
-  object-fit: cover;    /* заполняем всю область, обрезая лишнее */
-  border-radius: 12px 12px 0 0;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    display: block;
 }
 
-/* Текст под картинкой */
 .item-name {
     flex: 1;
     font-weight: 600;
@@ -338,7 +338,6 @@ body {
     opacity: 0.8;
 }
 
-/* Оверлей (затемнение фона) */
 .overlay {
     position: fixed;
     top: 0;
@@ -359,7 +358,6 @@ body {
     pointer-events: auto;
 }
 
-/* Адаптация под маленькие экраны (ширина < 600px) */
 @media (max-width: 600px) {
     .item {
         flex: 0 0 100%;
@@ -373,10 +371,10 @@ body {
     }
 }
 
-/* Десктоп 1920x1080 */
 @media (min-width: 1920px) and (max-height: 1080px) and (orientation: landscape) {
     .nad3 {
         font-size: 40px;
+        max-width: calc(100vw - 440px);
     }
     .button-catalog {
         width: 400px;
@@ -399,41 +397,22 @@ body {
     }
 }
 
-/* ============================================= */
-/* ПОЛНАЯ АДАПТАЦИЯ ПОД ЭКРАН 1080×1920 (ПОРТРЕТ) */
-/* ============================================= */
-@media (max-width: 1080px) and (min-height: 1920px) and (orientation: portrait){
+@media (max-width: 1080px) and (min-height: 1920px) and (orientation: portrait) {
     .logo {
         width: 180px;
         top: 20px;
         left: 20px;
     }
-
     .nad3 {
         font-size: 32px;
         white-space: normal;
         text-align: center;
-        max-width: 90%;
+        max-width: calc(100vw - 420px);
         line-height: 1.3;
         top: 15px;
         transform: translateX(-50%);
         padding: 0 10px;
     }
-
-    .rama {
-        height: 900px;
-    }
-    .anosov {
-        height: 720px;
-        top: 45.6%;
-        left: 49%;
-    }
-    .nad {
-        height: 300px;
-        top: 46%;
-        left: 51%;
-    }
-
     .button-catalog {
         width: 400px;
         height: 80px;
@@ -443,8 +422,6 @@ body {
         transform: translateX(-50%);
         border-radius: 12px;
     }
-
-    /* Шапка каталога */
     .catalog-header {
         padding: 15px 20px;
     }
@@ -460,14 +437,12 @@ body {
         width: 60px;
         height: 60px;
     }
-
-    /* Элементы каталога */
     .items-grid-full {
         gap: 25px;
         padding: 15px;
     }
     .item {
-        flex: 0 0 calc(22% - 25px);
+        flex: 0 0 calc(48% - 25px);
         min-width: 240px;
         font-size: 22px;
         border-radius: 16px;
@@ -481,21 +456,12 @@ body {
         padding: 20px 15px;
         font-size: 24px;
     }
-
-    /* Затемнение чуть сильнее */
     .overlay {
         background-color: rgba(0, 0, 0, 0.6);
     }
-      .item {
-        flex: 0 0 calc(48% - 20px);
-    }
 }
 
-/* ============================================= */
-/* ИДЕАЛЬНАЯ АДАПТАЦИЯ ПОД ТЕЛЕФОНЫ (ДО 480px) */
-/* ============================================= */
 @media (max-width: 480px) {
-    /* Фиксация экрана */
     body, html {
         overflow: hidden;
         height: 100%;
@@ -503,38 +469,24 @@ body {
         position: fixed;
         overscroll-behavior: none;
     }
-
-    /* Логотип */
     .logo {
         width: 100px;
         top: 10px;
         left: 10px;
         z-index: 15;
     }
-
-    /* Заголовок */
     .nad3 {
         font-size: 18px;
         top: 12px;
-        max-width: 65%;
+        left: 120px;
+        right: 10px;
+        transform: none;
+        max-width: none;
         white-space: normal;
         line-height: 1.2;
         text-align: center;
-        left: 55%;
-        transform: translateX(-50%);
-        text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
     }
-
-    /* Центральное изображение (muze.png) */
-    .center-img {
-        max-width: 580px;
-        max-height: 70vh;       /* не занимает весь экран, оставляет место для кнопки */
-        width: auto;
-        height: auto;
-        top: 45%;
-    }
-
-    /* Кнопка каталога */
     .button-catalog {
         width: 85%;
         max-width: 300px;
@@ -545,46 +497,36 @@ body {
         transform: translateX(-50%);
         border-radius: 30px;
         background-color: #d00000;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         -webkit-tap-highlight-color: transparent;
     }
-
-    /* Сайдбар */
     .sidebar-left {
         padding: 10px;
         width: 100vw;
     }
-
-    /* Шапка каталога */
     .catalog-header {
         padding: 5px 5px 5px 10px;
     }
-
     .back-btn {
         font-size: 20px;
         padding: 8px 5px;
     }
-
     .catalog-title {
         font-size: 20px;
         white-space: normal;
         line-height: 1.2;
         padding: 0 5px;
     }
-
     .close-btn {
         font-size: 44px;
         width: 44px;
         height: 44px;
         line-height: 44px;
     }
-
-    /* Сетка каталога — одна колонка */
     .items-grid-full {
         gap: 15px;
         padding: 5px;
     }
-
     .item {
         flex: 0 0 100%;
         min-width: 0;
@@ -592,132 +534,88 @@ body {
         font-size: 18px;
         border-radius: 16px;
     }
-
     .item-icon {
         max-height: 200px;
         width: 100%;
         object-fit: contain;
         background: #f5f5f5;
     }
-
     .item-name {
         padding: 14px 10px;
         font-size: 18px;
         line-height: 1.3;
     }
-
-    /* Оверлей */
     .overlay {
         background-color: rgba(0, 0, 0, 0.7);
     }
-
-    /* Убираем горизонтальный скролл */
     .sidebar-left, .overlay, body {
         overflow-x: hidden;
     }
-
-    /* Улучшаем тач-мишени */
     .back-btn, .close-btn, .item, .button-catalog {
         touch-action: manipulation;
     }
+}
 
-    /* Сверхмалые экраны (до 375px) */
-    @media (max-width: 375px) {
-        .nad3 {
-            font-size: 16px;
-            max-width: 60%;
-        }
-        .logo {
-            width: 80px;
-        }
-        .center-img {
-            max-height: 60vh;
-        }
-        .button-catalog {
-            height: 55px;
-            font-size: 22px;
-            bottom: 6%;
-        }
-        .item-icon {
-            max-height: 160px;
-        }
-        .item-name {
-            font-size: 16px;
-            padding: 12px 8px;
-        }
+@media (max-width: 375px) {
+    .nad3 {
+        font-size: 16px;
+        left: 100px;
+    }
+    .logo {
+        width: 80px;
+    }
+    .button-catalog {
+        height: 55px;
+        font-size: 22px;
+        bottom: 6%;
+    }
+    .item-icon {
+        max-height: 160px;
+    }
+    .item-name {
+        font-size: 16px;
+        padding: 12px 8px;
     }
 }
 
-/* ============================================= */
-/* АДАПТАЦИЯ ПОД ПЛАНШЕТЫ (768px - 1024px) */
-/* ============================================= */
 @media (min-width: 768px) and (max-width: 1024px) {
-    /* Логотип */
     .logo {
         width: 140px;
         top: 15px;
         left: 15px;
     }
-
-    /* Заголовок */
     .nad3 {
         font-size: 24px;
-        max-width: 80%;
+        max-width: calc(100vw - 340px);
         white-space: normal;
         text-align: center;
         line-height: 1.3;
     }
-
-    /* Центральное изображение */
-    .center-img {
-        max-width: 80vw;
-        max-height: 65vh;
-    }
-
-    .rama {
-        height: 600px;
-    }
-    .anosov {
-        height: 480px;
-    }
-    .nad {
-        height: 200px;
-    }
-
-    /* Кнопка каталога */
     .button-catalog {
         width: 280px;
         height: 65px;
         font-size: 26px;
         bottom: 12%;
     }
-
-    /* Сетка каталога - 3 колонки */
     .item {
         flex: 0 0 calc(32% - 20px);
         min-width: 220px;
         font-size: 17px;
     }
-
     .item-icon {
         height: 160px;
     }
-
     .item-name {
         padding: 13px 10px;
         font-size: 17px;
     }
-
-    /* Шапка каталога */
     .catalog-title {
         font-size: 22px;
     }
-
     .back-btn {
         font-size: 15px;
         padding: 9px 18px;
     }
-
     .close-btn {
         font-size: 45px;
         width: 45px;
@@ -725,36 +623,19 @@ body {
     }
 }
 
-/* ============================================= */
-/* АДАПТАЦИЯ ПОД ПОРТРЕТНЫЙ РЕЖИМ 3:4 (ПЛАНШЕТЫ) */
-/* ============================================= */
 @media (orientation: portrait) and (min-aspect-ratio: 2/3) and (max-aspect-ratio: 4/5) {
-    /* Логотип */
     .logo {
         width: 140px;
         top: 15px;
         left: 15px;
     }
-
-    /* Заголовок колледжа */
     .nad3 {
         font-size: 24px;
         white-space: normal;
-        max-width: 70%;
+        max-width: calc(100vw - 340px);
         line-height: 1.3;
         top: 15px;
     }
-
-    /* Центральное изображение (muze.png) */
-    .center-img {
-        max-width: 90vw;
-        max-height: 60vh;
-        width: auto;
-        height: auto;
-        top: 45%;
-    }
-
-    /* Кнопка открытия каталога */
     .button-catalog {
         width: 300px;
         height: 70px;
@@ -764,42 +645,29 @@ body {
         transform: translateX(-50%);
         border-radius: 40px;
     }
-
-    /* Сайдбар каталога */
     .sidebar-left {
         padding: 15px;
     }
-
-    /* Заголовок каталога */
     .catalog-title {
         font-size: 22px;
     }
-
-    /* Кнопка закрытия */
     .close-btn {
         font-size: 48px;
         width: 48px;
         height: 48px;
     }
-
-    /* Карточки элементов каталога */
     .item {
         flex: 0 0 calc(48% - 20px);
         font-size: 18px;
     }
-
     .item-icon {
         max-height: 160px;
     }
-
-    /* Кнопка "Назад" */
     .back-btn {
         font-size: 22px;
     }
 }
 
-
-/* Самостоятельный стиль кнопки «Открыть содержание» */
 button.button-content {
     display: block;
     background-color: red;
@@ -820,7 +688,7 @@ button.button-content {
 
 @media (orientation: portrait) {
     button.button-content {
-        left: 45%;
+        left: 50%;
         transform: translateX(-50%);
         bottom: calc(10% + 80px);
     }
@@ -828,10 +696,29 @@ button.button-content {
 
 @media (orientation: landscape) {
     button.button-content {
-        left: 15%;
+        left: 10%;
         transform: none;
         top: 65%;
         bottom: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    button.button-content {
+        width: 280px;
+        height: 65px;
+        font-size: 26px;
+        bottom: calc(12% + 78px);
+    }
+}
+
+@media (max-width: 1080px) and (min-height: 1920px) and (orientation: portrait) {
+    button.button-content {
+        width: 400px;
+        height: 80px;
+        font-size: 32px;
+        bottom: calc(10% + 96px);
+        border-radius: 12px;
     }
 }
 
@@ -847,6 +734,22 @@ button.button-content {
         transform: translateX(-50%);
         border-radius: 30px;
         background-color: #d00000;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@media (max-width: 375px) {
+    button.button-content {
+        height: 55px;
+        font-size: 22px;
+        bottom: calc(6% + 64px);
+    }
+}
+
+@media (min-width: 1920px) and (max-height: 1080px) and (orientation: landscape) {
+    button.button-content {
+        width: 400px;
+        height: 90px;
+        font-size: 36px;
     }
 }
