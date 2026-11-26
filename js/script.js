@@ -296,7 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**
-     * Обработка клика по элементу каталога
+     * Обработка клика по элементу каталога ылалылар казахстанос
      * @param {Event} e - Событие клика
      */
     function handleItemClick(e) {
