@@ -1,0 +1,158 @@
+{
+  "entries": [
+    {
+      "id": "AUDIT_20261118082255528147",
+      "timestamp": "2026-11-18T08:22:55.528147",
+      "timestamp_formatted": "18.11.2026 08:22:55",
+      "event_type": "external_link_open",
+      "object_id": "АБИЛИМПИКС",
+      "object_type": "external_link",
+      "ip_address": "127.0.0.1",
+      "username": null,
+      "description": "Внешняя ссылка: АБИЛИМПИКС",
+      "status": "success",
+      "additional_data": {
+        "url": "https://vm-fb.anosov.ru/api/public/dl/dwrwXuix?inline=true",
+        "status": "success"
+      }
+    },
+    {
+      "id": "AUDIT_20261118082259524291",
+      "timestamp": "2026-11-18T08:22:59.524291",
+      "timestamp_formatted": "18.11.2026 08:22:59",
+      "event_type": "link_click",
+      "object_id": "ВИДЕО РОЛИК О ЛВОЗ",
+      "object_type": "catalog_item_link",
+      "ip_address": "127.0.0.1",
+      "username": null,
+      "description": "Переход по ссылке: ВИДЕО РОЛИК О ЛВОЗ",
+      "status": "initiated",
+      "additional_data": {
+        "url": "https://vm-fb.anosov.ru/api/public/dl/Hy8eTeKC?inline=true",
+        "status": "initiated"
+      }
+    },
+    {
+      "id": "AUDIT_20261118082259548229",
+      "timestamp": "2026-11-18T08:22:59.548229",
+      "timestamp_formatted": "18.11.2026 08:22:59",
+      "event_type": "external_link_open",
+      "object_id": "ВИДЕО РОЛИК О ЛВОЗ",
+      "object_type": "external_link",
+      "ip_address": "127.0.0.1",
+      "username": null,
+      "description": "Внешняя ссылка: ВИДЕО РОЛИК О ЛВОЗ",
+      "status": "success",
+      "additional_data": {
+        "url": "https://vm-fb.anosov.ru/api/public/dl/Hy8eTeKC?inline=true",
+        "status": "success"
+      }
+    },
+    {
+      "id": "AUDIT_20261118082535166486",
+      "timestamp": "2026-11-18T08:25:35.166486",
+      "timestamp_formatted": "18.11.2026 08:25:35",
+      "event_type": "catalog_item_open",
+      "object_id": "/",
+      "object_type": "index",
+      "ip_address": "127.0.0.1",
+      "username": null,
+      "description": "Открытие главной страницы каталога",
+      "status": "success",
+      "additional_data": {
+        "item_path": "/",
+        "item_name": "Главная страница",
+        "status_code": 200,
+        "status_text": "success"
+      }
+    },
+    {
+      "id": "AUDIT_20261118082535187419",
+      "timestamp": "2026-11-18T08:25:35.187419",
+      "timestamp_formatted": "18.11.2026 08:25:35",
+      "event_type": "web_resource_view",
+      "object_id": "catalog",
+      "object_type": "resource",
+      "ip_address": "127.0.0.1",
+      "username": null,
+      "description": "Просмотр каталога веб-ресурсов",
+      "status": null,
+      "additional_data": {}
+    },
+    {
+      "id": "AUDIT_20261118082535803224",
+      "timestamp": "2026-11-18T08:25:35.803224",
+      "timestamp_formatted": "18.11.2026 08:25:35",
+      "event_type": "web_resource_view",
+      "object_id": "main_page_catalog",
+      "object_type": "ui_element",
+      "ip_address": "127.0.0.1",
+      "username": null,
+      "description": "Открытие каталога",
+      "status": null,
+      "additional_data": {}
+    },
+    {
+      "id": "AUDIT_20261118082557021027",
+      "timestamp": "2026-11-18T08:25:57.021027",
+      "timestamp_formatted": "18.11.2026 08:25:57",
+      "event_type": "catalog_item_open",
+      "object_id": "/",
+      "object_type": "index",
+      "ip_address": "127.0.0.1",
+      "username": null,
+      "description": "Открытие главной страницы каталога",
+      "status": "success",
+      "additional_data": {
+        "item_path": "/",
+        "item_name": "Главная страница",
+        "status_code": 200,
+        "status_text": "success"
+      }
+    },
+    {
+      "id": "AUDIT_20261118082557046957",
+      "timestamp": "2026-11-18T08:25:57.046957",
+      "timestamp_formatted": "18.11.2026 08:25:57",
+      "event_type": "web_resource_view",
+      "object_id": "catalog",
+      "object_type": "resource",
+      "ip_address": "127.0.0.1",
+      "username": null,
+      "description": "Просмотр каталога веб-ресурсов",
+      "status": null,
+      "additional_data": {}
+    },
+    {
+      "id": "AUDIT_20261118082559230364",
+      "timestamp": "2026-11-18T08:25:59.230364",
+      "timestamp_formatted": "18.11.2026 08:25:59",
+      "event_type": "catalog_item_open",
+      "object_id": "/",
+      "object_type": "index",
+      "ip_address": "127.0.0.1",
+      "username": null,
+      "description": "Открытие главной страницы каталога",
+      "status": "success",
+      "additional_data": {
+        "item_path": "/",
+        "item_name": "Главная страница",
+        "status_code": 200,
+        "status_text": "success"
+      }
+    },
+    {
+      "id": "AUDIT_20261118082559249276",
+      "timestamp": "2026-11-18T08:25:59.249276",
+      "timestamp_formatted": "18.11.2026 08:25:59",
+      "event_type": "web_resource_view",
+      "object_id": "catalog",
+      "object_type": "resource",
+      "ip_address": "127.0.0.1",
+      "username": null,
+      "description": "Просмотр каталога веб-ресурсов",
+      "status": null,
+      "additional_data": {}
+    }
+  ]
+}

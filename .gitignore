@@ -21,11 +21,6 @@ env/
 *.pem
 *.key
 
-# Runtime data
-data/users.json
-data/parser_images.json
-data/parser_errors.log
-data/audit/
 
 # Logs
 *.log

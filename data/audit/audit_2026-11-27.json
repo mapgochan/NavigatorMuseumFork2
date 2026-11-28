@@ -1,0 +1,105 @@
+{
+  "entries": [
+    {
+      "id": "AUDIT_20261127085250729088",
+      "timestamp": "2026-11-27T08:52:50.729073",
+      "timestamp_formatted": "27.11.2026 08:52:50",
+      "event_type": "catalog_item_open",
+      "object_id": "/",
+      "object_type": "index",
+      "ip_address": "127.0.0.1",
+      "username": null,
+      "description": "Открытие главной страницы каталога",
+      "status": "success",
+      "additional_data": {
+        "item_path": "/",
+        "item_name": "Главная страница",
+        "status_code": 200,
+        "status_text": "success"
+      }
+    },
+    {
+      "id": "AUDIT_20261127085251089118",
+      "timestamp": "2026-11-27T08:52:51.089099",
+      "timestamp_formatted": "27.11.2026 08:52:51",
+      "event_type": "web_resource_view",
+      "object_id": "catalog",
+      "object_type": "resource",
+      "ip_address": "127.0.0.1",
+      "username": null,
+      "description": "Просмотр каталога веб-ресурсов",
+      "status": null,
+      "additional_data": {}
+    },
+    {
+      "id": "AUDIT_20261127085302238133",
+      "timestamp": "2026-11-27T08:53:02.238127",
+      "timestamp_formatted": "27.11.2026 08:53:02",
+      "event_type": "web_resource_view",
+      "object_id": "catalog",
+      "object_type": "resource",
+      "ip_address": "127.0.0.1",
+      "username": "admin",
+      "description": "Просмотр каталога веб-ресурсов",
+      "status": null,
+      "additional_data": {}
+    },
+    {
+      "id": "AUDIT_20261127085320364441",
+      "timestamp": "2026-11-27T08:53:20.364434",
+      "timestamp_formatted": "27.11.2026 08:53:20",
+      "event_type": "web_resource_view",
+      "object_id": "catalog",
+      "object_type": "resource",
+      "ip_address": "127.0.0.1",
+      "username": "admin",
+      "description": "Просмотр каталога веб-ресурсов",
+      "status": null,
+      "additional_data": {}
+    },
+    {
+      "id": "AUDIT_20261127085855152957",
+      "timestamp": "2026-11-27T08:58:55.152946",
+      "timestamp_formatted": "27.11.2026 08:58:55",
+      "event_type": "catalog_item_open",
+      "object_id": "/",
+      "object_type": "index",
+      "ip_address": "127.0.0.1",
+      "username": null,
+      "description": "Открытие главной страницы каталога",
+      "status": "success",
+      "additional_data": {
+        "item_path": "/",
+        "item_name": "Главная страница",
+        "status_code": 200,
+        "status_text": "success"
+      }
+    },
+    {
+      "id": "AUDIT_20261127085855607694",
+      "timestamp": "2026-11-27T08:58:55.607684",
+      "timestamp_formatted": "27.11.2026 08:58:55",
+      "event_type": "web_resource_view",
+      "object_id": "catalog",
+      "object_type": "resource",
+      "ip_address": "127.0.0.1",
+      "username": null,
+      "description": "Просмотр каталога веб-ресурсов",
+      "status": null,
+      "additional_data": {}
+    },
+    {
+      "id": "AUDIT_20261127085907930019",
+      "timestamp": "2026-11-27T08:59:07.930013",
+      "timestamp_formatted": "27.11.2026 08:59:07",
+      "event_type": "web_resource_view",
+      "object_id": "catalog",
+      "object_type": "resource",
+      "ip_address": "127.0.0.1",
+      "username": "admin",
+      "description": "Просмотр каталога веб-ресурсов",
+      "status": null,
+      "additional_data": {}
+    }
+  ]
+}

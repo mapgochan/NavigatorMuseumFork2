@@ -1,0 +1,35 @@
+{
+  "entries": [
+    {
+      "id": "AUDIT_20261119083325681979",
+      "timestamp": "2026-11-19T08:33:25.681972",
+      "timestamp_formatted": "19.11.2026 08:33:25",
+      "event_type": "catalog_item_open",
+      "object_id": "/",
+      "object_type": "index",
+      "ip_address": "127.0.0.1",
+      "username": null,
+      "description": "Открытие главной страницы каталога",
+      "status": "success",
+      "additional_data": {
+        "item_path": "/",
+        "item_name": "Главная страница",
+        "status_code": 200,
+        "status_text": "success"
+      }
+    },
+    {
+      "id": "AUDIT_20261119083325726421",
+      "timestamp": "2026-11-19T08:33:25.726412",
+      "timestamp_formatted": "19.11.2026 08:33:25",
+      "event_type": "web_resource_view",
+      "object_id": "catalog",
+      "object_type": "resource",
+      "ip_address": "127.0.0.1",
+      "username": null,
+      "description": "Просмотр каталога веб-ресурсов",
+      "status": null,
+      "additional_data": {}
+    }
+  ]
+}
